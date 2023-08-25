@@ -1,3 +1,52 @@
+.font-family {
+  font-family: "DM Serif Display", serif;
+  src: url(../fonts/AnyConv.com__DMSerifDisplay-Regular.woff2);
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+.font-family {
+  font-family: "Jost", sans-serif;
+  src: url(../fonts/AnyConv.com__Jost-Italic-VariableFont_wght.woff2);
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  padding-top: 100px;
+  background: url("../img/Photo.jpg") no-repeat center/cover;
+  width: 1920px;
+  height: 1042px;
+  border-radius: 0px 0px 150px 150px;
+}
+.hero__content {
+  margin-bottom: 350px;
+  width: 593px;
+  height: 392px;
+}
+.hero__text {
+  font-family: "Jost", sans-serif;
+  color: #4D5053;
+  font-size: 21px;
+  line-height: 31.5px;
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin: 0;
+  font-family: "DM Serif Display";
+  color: #292F36;
+  font-size: 75px;
+  line-height: 93px;
+  width: 600px;
+}
+
 /* Document
  * ========================================================================== */
 /**
@@ -236,6 +285,14 @@
   border-radius: 18px;
   width: 219px;
   height: 75px;
+  font-family: "Jost";
+}
+.button::after {
+  content: "";
+  background: url("../img/Vector.svg") no-repeat center;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
 }
 .button--green {
   background-color: #406636;
@@ -250,14 +307,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.hero {
-  position: relative;
-  padding-top: 100px;
-  background: #292F36 url("../img/Photo.jpg") no-repeat center/cover;
-  width: 1920px;
-  height: 1042px;
 }
 
 .header {
@@ -281,22 +330,43 @@
 
 .menu {
   display: flex;
+  justify-content: center;
   align-items: center;
   word-spacing: 20px;
+}
+.menu__img {
+  display: inline-block;
+  font-size: 40px;
+  font-family: "DM Serif Display";
 }
 .menu__seach {
   margin-right: 29px;
 }
-
 .nav {
-  margin-right: 53px;
+  display: inline-block;
+  text-decoration: none;
+  width: 466px;
+  height: 25px;
+  font-family: "Jost", sans-serif;
 }
 .nav__item {
   text-decoration: none;
   color: #292F36;
+  display: inline-block;
+}
+.nav__item::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 14px;
+  background-color: #406636;
+  transition: 0.5s;
+  width: 0%;
+}
+.nav__item:hover::after {
+  width: 100%;
 }
 
 body {
-  font-family: sans-serif;
   font-size: 20px;
 }

@@ -12,15 +12,45 @@
  text-transform: uppercase
 .menu
  display: flex
+ justify-content: center
  align-items: center
  word-spacing: 20px 
- 
+ &__img
+  display: inline-block
+  font-size: 40px
+  font-family: 'DM Serif Display' 
  &__seach
   margin-right: 29px
-.nav
- margin-right: 53px
+ &__icon
+.nav 
+ display: inline-block
+ text-decoration: none
+ width: 466px
+ height: 25px
+ font-family: 'Jost', sans-serif
  &__item
   text-decoration: none
   color: $dark
+  display: inline-block
+  &::after
+   content:''
+   display: block
+   height: 2px
+   margin-top: 14px
+   background-color: $green
+   transition: 0.5s
+   width: 0%
+  &:hover
+    &::after
+      width: 100%
+
+
+
+   
+ 
+  
+  
+
+   
  
   
