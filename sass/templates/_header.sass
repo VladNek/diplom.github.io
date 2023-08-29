@@ -21,7 +21,6 @@
   font-family: 'DM Serif Display' 
  &__seach
   margin-right: 29px
- &__icon
 .nav 
  display: inline-block
  text-decoration: none
@@ -29,10 +28,12 @@
  height: 25px
  font-family: 'Jost', sans-serif
  &__item
+  position: relative
   text-decoration: none
   color: $dark
   display: inline-block
   &::after
+   position: absolute
    content:''
    display: block
    height: 2px
