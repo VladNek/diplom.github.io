@@ -1,25 +1,46 @@
 .button
- padding: 26px, 48px, 26px, 48px
+ padding: 26px, 48px, 26px, 48p
  border: none
  border-radius: 18px
  width: 219px
  height: 75px
+ font-family: 'Jost', sans-serif 
+ background-color: $green
+ color: $light
  &--green 
   background-color: $green
   color: $light
  &--text 
   text-decoration: none
   color: $light
-  font-family: 'Jost', sans-serif 
-  width: 135px
-  height: 23px
+  position: relative
   &::after
    content: ''
    margin-left: 10px
    background: url('../img/Vector.svg') no-repeat center
    color: $light
    border: 2px
-  
+   width: 15px
+   height: 13px
+   position: absolute
+   top: 50%
+   transform: translateY(-50%)
+.section-title__button
+   text-decoration: none
+   color: $light
+   position: relative
+   &::after
+    content: ''
+    margin-left: 10px
+    background: url('../img/Vector.svg') no-repeat center
+    color: $light
+    border: 2px
+    width: 15px
+    height: 13px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
       
   
   
