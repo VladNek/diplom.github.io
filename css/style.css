@@ -264,6 +264,7 @@
   text-decoration: none;
   color: #fff;
   position: relative;
+  cursor: pointer;
 }
 .button--text::after {
   content: "";
@@ -271,7 +272,7 @@
   background: url("../img/Vector.svg") no-repeat center;
   color: #fff;
   border: 2px;
-  width: 15px;
+  width: 20px;
   height: 13px;
   position: absolute;
   top: 50%;
@@ -282,6 +283,7 @@
   text-decoration: none;
   color: #fff;
   position: relative;
+  cursor: pointer;
 }
 .section-title__button::after {
   content: "";
@@ -289,11 +291,12 @@
   background: url("../img/Vector.svg") no-repeat center;
   color: #fff;
   border: 2px;
-  width: 15px;
+  width: 20px;
   height: 13px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .container {
@@ -351,12 +354,73 @@
   height: 580px;
   text-align: center;
 }
-.rov__cov {
-  text-align: center;
+
+.cov-1 {
+  position: relative;
+}
+.cov-1::after {
+  content: "";
+  margin-left: 10px;
+  background: url("../img/4.png") no-repeat center;
+  width: 90px;
+  height: 100px;
+  position: absolute;
+  top: 61%;
+  transform: translateX(-55%);
+}
+.cov-1::after__card {
+  margin-top: 60px;
+}
+
+.cov-2 {
+  position: relative;
+}
+.cov-2::after {
+  content: "";
+  margin-left: 10px;
+  background: url("../img/5.png") no-repeat center;
+  width: 90px;
+  height: 100px;
+  position: absolute;
+  top: 61%;
+  transform: translateX(-55%);
+}
+.cov-2::after__card {
+  margin-top: 60px;
+}
+
+.cov-3 {
+  position: relative;
+}
+.cov-3::after {
+  content: "";
+  margin-left: 10px;
+  background: url("../img/6.png") no-repeat center;
+  width: 90px;
+  height: 100px;
+  position: absolute;
+  top: 61%;
+  transform: translateX(-55%);
+}
+.cov-3::after__card {
+  margin-top: 60px;
 }
 
 .card__image {
   border-radius: 50px;
+}
+
+.text__cardd {
+  margin-top: 60px;
+}
+.text__cardt {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+}
+.text__card {
+  font-family: "Jost";
+  font-size: 22px;
 }
 
 .projects {
@@ -431,6 +495,7 @@
   color: #000;
   transition: 0.5s linear;
   position: relative;
+  cursor: pointer;
 }
 .types__text2::after {
   content: "";
@@ -438,11 +503,12 @@
   background: url("../img/Vector1.svg") no-repeat center;
   color: #fff;
   border: 2px;
-  width: 15px;
+  width: 20px;
   height: 13px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .types__text2:hover {
   color: #406636;
@@ -490,6 +556,11 @@
 }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 95;
   background-color: #fff;
   padding: 0px 32px;
 }
@@ -545,6 +616,7 @@
   background-color: #406636;
   transition: 0.5s;
   width: 0%;
+  cursor: pointer;
 }
 .nav__item:hover::after {
   width: 100%;
