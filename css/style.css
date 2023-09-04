@@ -320,9 +320,95 @@
   margin-right: 94px;
 }
 
-.works {
-  margin-top: 200px;
+.news {
   width: auto;
+  height: 777px;
+}
+.news__section-title {
+  width: 737px;
+  height: 137px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title__headingg {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 50px;
+  color: rgb(41, 47, 54);
+  margin: auto;
+}
+
+.section-title__texttt {
+  font-family: "Jost";
+  font-size: 21.5px;
+  line-height: 33px;
+  color: rgb(77, 80, 83);
+}
+
+.rovv {
+  position: absolute;
+  margin-top: 900px;
+  display: flex;
+  justify-content: space-around;
+  width: 1221px;
+  height: 580px;
+  text-align: center;
+}
+
+.cov-4 {
+  position: relative;
+}
+.cov-4::after {
+  content: "Living Design";
+  width: 124px;
+  height: 41px;
+  background: #fff;
+  border-radius: 30px;
+  position: absolute;
+  top: 319px;
+  left: 110px;
+  transform: translateX(-55%);
+}
+.cov-4::after__card {
+  margin-top: 60px;
+}
+
+.choise {
+  margin: auto;
+  text-align: center;
+  width: 1920px;
+  position: relative;
+  margin-bottom: 1000px;
+}
+.choise__section-titlee {
+  width: 737px;
+  height: 137px;
+  margin: auto;
+  text-align: center;
+}
+.choise__imgg {
+  position: absolute;
+  width: 1920px;
+  height: 838px;
+  margin-top: 250px;
+  left: 0;
+  top: 0;
+}
+.choise::after {
+  content: "";
+  background: url("../img/play.svg") no-repeat center;
+  width: 132px;
+  height: 132px;
+  position: absolute;
+  transform: translateX(-50%);
+  margin-top: 400px;
+  cursor: pointer;
+}
+
+.works {
+  width: auto;
+  height: 777px;
+  margin-bottom: 250px;
 }
 .works__section-title {
   width: 737px;
@@ -425,6 +511,7 @@
 
 .projects {
   margin-top: 120px;
+  margin-bottom: 270px;
 }
 
 .section-title-heading {
