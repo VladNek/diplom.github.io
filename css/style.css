@@ -278,6 +278,32 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.button--greend {
+  background-color: #406640;
+  color: #fff;
+  border: 1px;
+  border-color: #fff;
+  border-style: solid;
+  margin-top: 32px;
+}
+.button--textt {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.button--textt::after {
+  content: "";
+  margin-left: 10px;
+  background: url("../img/Vector.svg") no-repeat center;
+  color: #fff;
+  width: 20px;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .section-title__button {
   text-decoration: none;
@@ -320,9 +346,73 @@
   margin-right: 94px;
 }
 
+.footer__high {
+  display: flex;
+  width: 1199px;
+  gap: 101px;
+}
+.footer__high-links {
+  width: 393px;
+  gap: 31px;
+}
+.footer__high-pages {
+  width: 125px;
+  font-family: "Jost";
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.footer__high-services {
+  width: 125px;
+}
+.footer__high-contacts {
+  width: 258px;
+}
+
+.ttext {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.decorative {
+  position: relative;
+  display: flex;
+  background: rgb(64, 102, 54);
+  padding: 80px 315px 80px 315px;
+  border-radius: 70px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 150px;
+}
+
+.hero__contentd {
+  width: 569px;
+  height: 214px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.hero__titlee {
+  font-family: "DM Serif Display";
+  line-height: 63px;
+  font-size: 47px;
+}
+
+.hero__texta {
+  font-family: "Jost";
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+
 .news {
   width: auto;
   height: 777px;
+  margin-bottom: 250px;
 }
 .news__section-title {
   width: 737px;
@@ -365,12 +455,28 @@
   background: #fff;
   border-radius: 30px;
   position: absolute;
-  top: 319px;
+  top: 300px;
   left: 110px;
   transform: translateX(-55%);
 }
 .cov-4::after__card {
   margin-top: 60px;
+}
+
+.text__cardtt {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.text__cardr {
+  font-family: "Jost";
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: rgb(77, 80, 83);
 }
 
 .choise {
@@ -389,7 +495,6 @@
 .choise__imgg {
   position: absolute;
   width: 1920px;
-  height: 838px;
   margin-top: 250px;
   left: 0;
   top: 0;
@@ -502,11 +607,12 @@
 .text__cardt {
   font-family: "DM Serif Display", sans-serif;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 33px;
 }
 .text__card {
   font-family: "Jost";
   font-size: 22px;
+  line-height: 33px;
 }
 
 .projects {
@@ -530,6 +636,10 @@
 .section-title__text1 {
   margin: auto;
   line-height: 7px;
+}
+
+.section-title__text1 {
+  color: rgb(77, 80, 83);
 }
 
 .section-title--left {
