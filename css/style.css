@@ -265,6 +265,7 @@
   color: #fff;
   position: relative;
   cursor: pointer;
+  margin-right: 10px;
 }
 .button--text::after {
   content: "";
@@ -389,6 +390,24 @@
   letter-spacing: 0em;
   text-align: left;
   color: rgb(64, 102, 54);
+}
+
+.footer__low {
+  display: flex;
+  border-top: 2px solid rgb(229, 229, 229);
+}
+
+.low__textta {
+  font-family: "Jost";
+  font-size: 22px;
+  line-height: 33px;
+  text-align: left;
+  color: rgb(77, 80, 83);
+}
+
+.low__text2 {
+  display: flex;
+  margin-left: 550px;
 }
 
 .decorative {
@@ -707,6 +726,7 @@
   transition: 0.5s linear;
   position: relative;
   cursor: pointer;
+  margin-right: 10px;
 }
 .types__text2::after {
   content: "";
