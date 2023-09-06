@@ -346,6 +346,9 @@
   margin-right: 94px;
 }
 
+.footer {
+  margin-top: 150px;
+}
 .footer__high {
   display: flex;
   width: 1199px;
@@ -378,15 +381,24 @@
   text-align: left;
 }
 
+.pages {
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(64, 102, 54);
+}
+
 .decorative {
   position: relative;
   display: flex;
   background: rgb(64, 102, 54);
   padding: 80px 315px 80px 315px;
   border-radius: 70px;
-  margin-left: 350px;
-  margin-right: 350px;
-  margin-bottom: 150px;
+  margin: auto;
+  width: 600px;
 }
 
 .hero__contentd {
@@ -394,6 +406,7 @@
   height: 214px;
   color: rgb(255, 255, 255);
   text-align: center;
+  margin: auto;
 }
 
 .hero__titlee {
@@ -485,6 +498,7 @@
   width: 1920px;
   position: relative;
   margin-bottom: 1000px;
+  margin-right: 300px;
 }
 .choise__section-titlee {
   width: 737px;
