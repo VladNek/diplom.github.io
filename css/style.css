@@ -398,6 +398,7 @@
 }
 
 .low__textta {
+  display: flex;
   font-family: "Jost";
   font-size: 22px;
   line-height: 33px;
@@ -857,8 +858,19 @@
   .menu {
     display: none;
   }
+  .hero {
+    text-align: center;
+  }
   .hero__content {
     margin-left: 200px;
+  }
+  .log {
+    flex-direction: column;
+    margin-bottom: 200px;
+    line-height: -20px;
+  }
+  .types {
+    flex-direction: column;
   }
 }
 body {
