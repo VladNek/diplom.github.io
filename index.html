@@ -4,82 +4,89 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="css/style.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <link href="/path/to/jquery.fancybox.min.css" rel="stylesheet" />
+ <script src="/path/to/jquery.fancybox.min.js"></script>
+
  <title>Document</title>
 </head>
 <body>
  <div class="header">
   <div class="container">
-   <div class="header__block">
-    <div class="block__header block--left">
-     <div class="img menu__img">
-       <img src="img/logo.svg" class="logo">
-       <span>Decorative</span>
-     </div>
-    </div>
-   </div>
-   <div class="menu">
-    <nav class="nav menu__nav">
-      <a href="#" class="nav__item"> Home </a>
-      <a href="#" class="nav__item"> Shop </a>
-      <a href="#" class="nav__item"> Category </a>
-      <a href="#" class="nav__item"> Blog </a>
-      <a href="#" class="nav__item"> Contact</a>
-    </nav>
+    <div class="header__wrapper">
+      <div class="header__block">
+       <div class="block__header block--left">
+        <div class="logo">
+         <div class="logo__img">
+          <img src="img/logo.svg" class="logo">
+         </div>
+         <span>Decorative</span>
+        </div>
+       </div>
+      </div>
+      <div class="menu">
+       <nav class="nav menu__nav">
+         <a href="#" class="nav__item"> Home </a>
+         <a href="#" class="nav__item"> Shop </a>
+         <a href="#" class="nav__item"> Category </a>
+         <a href="#" class="nav__item"> Blog </a>
+         <a href="#" class="nav__item"> Contact</a>
+       </nav>
+      </div>
       <div class="seach menu__seach">
        <img src="img/Search.svg" alt="Seach">
       </div>
       <div class="icon menu__icon">
        <img src="img/Icon.svg" class="Icon">
       </div>
-   </div>
+
+    </div>
    <!-- /.menu -->
   </div>
   <!-- /.container -->
  </div>
  <main>
-  <section class="hero">
+  <section class="hero" style="background: url(img/Photo.jpg) no-repeat center/cover;">
    <div class="container">
     <div class="hero__content">
       <h1 class="title hero__title">Decorate your Life with wood</h1>
       <p class="hero__text">Don’t be confusion about choosing home decoration. We are presenting the Best Creative  Furniture.</p>
       <button class="button hero__button button--green">
-        <a href="#"  class="button hero__button button--text"> View in shop </a>
+        <span>View in shop</span>
+        <!-- <a href="#"  class="button hero__button button--text"> View in shop </a> -->
       </button>
     </div>
-    <!-- /.hero__content -->
    </div>
    <!-- /.container -->
   </section>
   <!-- /.hero -->
-  <div class="container">
-   <section class="log">
-      <div class="log__blog">
-        <img src="img/logo-1.svg" alt="logo-1">
-      </div>
+  <section class="log">
+   <div class="container">
+      <div class="log__blog"><img src="img/logo-1.svg" alt="logo-1"></div>
       <div class="log__blog"><img src="img/logo-2.svg" alt="logo-2"></div>
       <div class="log__blog"><img src="img/logo-3.svg" alt="logo-3"></div>
       <div class="log__blog"><img src="img/logo-4.svg" alt="logo-4"></div>
       <div class="log__blog"><img src="img/logo-5.svg" alt="logo-5"></div> 
-   </section>
-   <!-- /.logo -->
-  </div>
-  <!-- /.container -->
+   </div>
+   <!-- /.container -->
+  </section>
+  <!-- /.logo -->
   <section class="section types">
-    <div class="container">
+  <div class="container">
       <div class="text types__text">
-        <p class="types__text">Well considered design</p>
-        <p class="types__text1">Well design is the features that are considered when planning and constructing a well</p>
-        <p class="types__text2">Read More</p>
+        <h2 class="caption">Well considered design</h2>
+        <p>Well design is the features that are considered when planning and constructing a well</p>
+        <button class="types__button">Read More</button>
       </div>
       <div class="text types__text">
-        <p class="types__text">We create for you</p>
-        <p class="types__text1">Taking a considered approach to design means never losing sight of how function and livability</p>
-        <p class="types__text2">Read More</p>
+        <h2 class="caption">We create for you</h2>
+        <p>Taking a considered approach to design means never losing sight of how function and livability</p>
+        <button class="types__button">Read More</button>
       </div>
       <div class="text types__text">
-        <p class="types__text">Leave the details for us</p>
-        <p class="types__text1">High quality example sentences with leaving the details to others in the context from reliable</p>
-        <p class="types__text2">Read More</p>
+        <h2 class="caption">Leave the details for us</h2>
+        <p>High quality example sentences with leaving the details to others in the context from reliable</p>
+        <button class="types__button">Read More</button>
       </div>
     </section>
     <!-- /.container -->
@@ -96,9 +103,9 @@
           <div class="section-title__call"> 
             <img src="img/Call Icon.svg" class="call icon">
           </div>
-          <div class="section-title__text1">
-            <h3 class="section-title__text2">012345678</h3>
-            <p class="section-title__text3">Call Us Anytime</p>
+          <div class="section-title__contacts">
+            <h3>012345678</h3>
+            <p>Call Us Anytime</p>
           </div>
           </div>
           <button class="button section-title__button">Get Free Estimate</button>
@@ -119,8 +126,8 @@
   <section class="section works">
     <div class="container">
       <div class="works__section-title">
-       <p class="section-title__heading">How It Works</p>
-       <p class="section-title__textt"> There are many variations of passages of Lorem Ipsum available, but the    majority have suffered alteration in some form</p>
+       <h1 class="section-title__heading">How It Works</h1>
+       <p> There are many variations of passages of Lorem Ipsum available, but the    majority have suffered alteration in some form</p>
       </div>
       <div class="rov">
         <div class="cov-1">
@@ -156,14 +163,19 @@
   </section>
   <!-- /.section works -->
   <section class="choise">
-   <div class="container">
-      <div class="section-titlee choise__section-titlee">
-        <h3 class="section-title-headingg"> Pick your choise </h3>
-        <p class="section-title__texttt"> It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.</p>
+    <div class="choise__block">
+      <div class="container">
+        <div class="section-titlee choise__section-titlee">
+          <h3 class="section-title-headingg"> Pick your choise </h3>
+          <p class="section-title__texttt"> It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.</p>
+        </div>
       </div>
-       <div class="choise__imgg">
+       <!-- <div class="choise__imgg">
         <img src="/img/10.jpg" alt="Pick your choise" class="choise__image">
-       </div>
+       </div> -->
+       <a class="choise__img" href="https://youtu.be/52Hapkp4UkQ?si=zARmxyOQXgHVzbTp" data-fancybox style="background: url(img/10.jpg) no-repeat center/cover;">
+        <span></span> 
+       </a>
    </div>
    <!-- /.container -->
   </section>
@@ -177,7 +189,10 @@
       <div class="rovv">
         <div class="cov-4">
          <div class="card works__cardz">
-          <img src="img/news1.jpg" alt="Best For Any Office & Business Interior Solution" class="card__image">
+          <div class="card__img">
+            <img src="img/news1.jpg" alt="Best For Any Office & Business Interior Solution" class="card__image">
+            <span>Living</span>
+          </div>
            <div class="card text__cardd">
            <p class="card text__cardt"> Best For Any Office & Business Interior Solution</p>
            <p class="card text__cardr"> All the Lorem Ipsum generators on the Internet tend to repeat prede</p>

@@ -247,7 +247,7 @@
 }
 
 .button {
-  padding: 26px, 48px, 26px, 48p;
+  padding: 26px, 48px, 26px, 48px;
   border: none;
   border-radius: 18px;
   width: 219px;
@@ -259,15 +259,13 @@
 .button--green {
   background-color: #406636;
   color: #fff;
-}
-.button--text {
   text-decoration: none;
   color: #fff;
   position: relative;
   cursor: pointer;
   margin-right: 10px;
 }
-.button--text::after {
+.button--green::after {
   content: "";
   margin-left: 10px;
   background: url("../img/Vector.svg") no-repeat center;
@@ -327,13 +325,10 @@
 }
 
 .container {
-  width: 100%;
   max-width: 1220px;
-  padding: 38px 0px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  padding: 0px 30px;
+  margin: 0 auto;
 }
 
 .row {
@@ -481,18 +476,7 @@
 .cov-4 {
   position: relative;
 }
-.cov-4::after {
-  content: "Living Design";
-  width: 124px;
-  height: 41px;
-  background: #fff;
-  border-radius: 30px;
-  position: absolute;
-  top: 300px;
-  left: 110px;
-  transform: translateX(-55%);
-}
-.cov-4::after__card {
+.cov-4__card {
   margin-top: 60px;
 }
 
@@ -512,35 +496,53 @@
   color: rgb(77, 80, 83);
 }
 
-.choise {
-  margin: auto;
-  text-align: center;
-  width: auto;
+.card__img {
   position: relative;
-  margin-bottom: 1000px;
+}
+.card__img span {
+  position: absolute;
+  background: #fff;
+  border-radius: 30px;
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  padding: 10px;
+}
+
+.choise {
+  position: relative;
+  margin-bottom: 150px;
+}
+.choise__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.choise__img {
+  max-width: 1920px;
+  width: 100%;
+  height: 838px;
+  border-radius: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+.choise__img span {
+  background: url("../img/play.svg") no-repeat center;
+  width: 132px;
+  height: 132px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .choise__section-titlee {
   width: 737px;
   height: 137px;
   margin: auto;
   text-align: center;
-}
-.choise__imgg {
-  position: absolute;
-  width: 1199px;
-  margin-top: 300px;
-  left: 0;
-  top: 0;
-}
-.choise::after {
-  content: "";
-  background: url("../img/play.svg") no-repeat center;
-  width: 132px;
-  height: 132px;
-  position: absolute;
-  transform: translateX(-50%);
-  margin-top: 400px;
-  cursor: pointer;
+  margin-bottom: 120px;
 }
 
 .section-title-headingg {
@@ -557,23 +559,14 @@
 }
 .works__section-title {
   width: 737px;
-  height: 137px;
   margin: auto;
-  text-align: center;
 }
 
 .section-title__heading {
-  font-family: "DM Serif Display", sans-serif;
+  font-family: "DM Serif Display";
   font-size: 50px;
   color: rgb(41, 47, 54);
   margin: auto;
-}
-
-.section-title__textt {
-  font-family: "Jost";
-  font-size: 23px;
-  line-height: 33px;
-  color: rgb(77, 80, 83);
 }
 
 .rov {
@@ -639,6 +632,7 @@
 
 .card__image {
   border-radius: 50px;
+  width: 381px;
 }
 
 .text__cardd {
@@ -664,16 +658,14 @@
   font-size: 50px;
   color: rgb(41, 47, 54);
   font-family: "DM Serif Display", sans-serif;
+  line-height: 62px;
 }
 
 .section-title__text {
-  font-size: 22px;
-  line-height: 33px;
-  font-family: "Jost";
-  display: inline-block;
+  color: rgb(77, 80, 83);
 }
 
-.section-title__text1 {
+.section-title__contacts {
   margin: auto;
   line-height: 7px;
 }
@@ -685,6 +677,7 @@
 .section-title--left {
   width: 472px;
   height: 614px;
+  text-align: start;
 }
 
 .section-title--right {
@@ -715,27 +708,24 @@
   z-index: -1;
 }
 
+.types {
+  margin-top: 90px;
+}
 .types__text {
   width: 358px;
-  font-family: "DM Serif Display", sans-serif;
-  font-size: 26px;
-  color: rgb(41, 47, 54);
-  text-align: center;
+  color: rgb(77, 80, 83);
 }
-.types__text1 {
-  font-family: "Jost";
-  font-size: 22px;
-}
-.types__text2 {
+.types__button {
   font-family: "Jost";
   font-size: 18px;
   color: #000;
-  transition: 0.5s linear;
   position: relative;
   cursor: pointer;
-  margin-right: 10px;
+  border: none;
+  background: none;
+  transition: 0.3s;
 }
-.types__text2::after {
+.types__button::after {
   content: "";
   margin-left: 10px;
   background: url("../img/Vector1.svg") no-repeat center;
@@ -748,17 +738,24 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-.types__text2:hover {
+.types__button:hover {
   color: #406636;
+}
+
+.caption {
+  width: 358px;
+  font-family: "DM Serif Display";
+  font-size: 26px;
+  color: rgb(41, 47, 54);
+  text-align: center;
 }
 
 .log {
   margin-top: 90px;
-  display: flex;
-  align-items: center;
-  width: 1174px;
-  height: 102px;
-  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.log__blog {
   opacity: 50%;
 }
 
@@ -773,15 +770,17 @@
 .hero__content {
   margin-bottom: 350px;
   width: 593px;
-  height: 392px;
+  position: relative;
+  text-align: start;
+}
+.hero__img {
+  border-radius: 0px 0px 150px 150px;
 }
 .hero__text {
-  font-family: "Jost", sans-serif;
   color: #4D5053;
   font-size: 21px;
   line-height: 31.5px;
   max-width: 500px;
-  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -800,21 +799,18 @@
   width: 100%;
   z-index: 95;
   background-color: #fff;
-  padding: 0px 32px;
 }
-
-.block {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-.block__left {
-  display: contents;
+  width: 100%;
+  padding: 0px 30px;
 }
 
 .logo {
   color: #292F36;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -823,21 +819,23 @@
   align-items: center;
   word-spacing: 20px;
 }
-.menu__img {
-  display: inline-block;
-  font-size: 40px;
-  font-family: "DM Serif Display";
-}
 .menu__seach {
+  width: 23px;
+  height: 23px;
   margin-right: 29px;
+  cursor: pointer;
+}
+.menu__icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 
 .nav {
   display: inline-block;
-  text-decoration: none;
-  width: 466px;
-  height: 25px;
-  font-family: "Jost", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0 53px;
 }
 .nav__item {
   position: relative;
@@ -860,7 +858,15 @@
   width: 100%;
 }
 
-@media screen and (max-width: 920px) {
+.logo span {
+  font-family: "DM Serif Display";
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 991px) {
   .header {
     text-align: center;
     width: auto;
@@ -885,9 +891,23 @@
   .rov {
     display: block;
   }
+  .choise {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: auto;
+    display: block;
+    text-align: center;
+  }
 }
 body {
-  font-size: 20px;
   margin: 0px;
-  overflow-x: hidden;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  color: rgb(77, 80, 83);
 }
